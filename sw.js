@@ -1,5 +1,5 @@
 // Service worker da Cris: funciona offline e recebe os avisos (Web Push).
-const CACHE = 'cris-vmvbcewgh';
+const CACHE = 'cris-vmvbcod7m';
 const ARQS = ['./', 'index.html', 'app.js', 'app.css', 'cris.glb', 'room.glb', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png',
   'fonts/n400.woff2', 'fonts/n600.woff2', 'fonts/n700.woff2', 'fonts/n800.woff2'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ARQS)).then(() => self.skipWaiting())); });
